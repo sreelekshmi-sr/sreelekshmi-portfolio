@@ -1,0 +1,407 @@
+<!-- for using bootstrap offline we need to download the bootstrap and use the following js and css import asbelow -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porfolio</title>
+
+  <!-- css section -->
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+  <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="./portfolio.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container flex-lg-column">
+      <!--  mx-lg-auto means margin left and right for larger device make center -->
+      <a class="navbar-brand mx-lg-auto" href="#">
+        <!-- display-block (d-block) egen kodthathin shesham display-lg-none kodukukaa for hiding the  -->
+        <!--"d-block" "d-lg-none" means on larger device we need to hide the name  -->
+        <span class="h3 fw-bold d-block d-lg-none">Sreelekshmi S R</span>
+        <!--"d-lg-block" "d-none" means on larger device we need to hide the name  -->
+        <!-- larger device mathram display aakuka athin   class egane koduthaa mathi -->
+        <img src="./assets/images/Profile-Pic.jpeg" class="d-none d-lg-block rounded-circle" alt="profile" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ms-auto(marginstart auto) is used to push the content to the right side -->
+        <!-- flex-lg-colummn means flex on larger device is column -->
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item" style="cursor: pointer">
+            <a class="nav-link contact__style" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contentwrapper -->
+  <!-- whole content will come inside this -->
+  <div id="content-wrapper">
+    <!-- HOME SECTION -->
+
+    <section id="home" class="full-height p-lg-5">
+      <div class="container">
+        <div class="row">
+          <!-- large screenil it will take  8 column space and below it will take 12 column space-->
+          <div class="col-lg-8">
+            <!--display-4 giving font-size in rem, fw-bold  means font-weight bold -->
+            <h1 class="display-4 fw-bold" data-aos="fade-up">
+              I'M A <span class="text-brand">SOFTWARE DEVELOPER</span>
+            </h1>
+            <!-- "lead" class will give font-size and font-weight -->
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+              Self-motivated, Passionate Software Developer, curious to learn
+              more about developing scalable distributed systems. I love
+              exploring new technologies, solving real-life problems
+              end-to-end, and I have a keen interest in the field of
+              engineering, innovation and especially tech stuff.
+            </p>
+
+            <div data-aos="fade-up" data-aos-delay="500" class="download__cv-wrapper">
+              <!-- me-3 means marginend-3 (1 rem) -->
+              <!-- <a href="#work" class="btn btn-brand me-3">Explore My Work </a> -->
+              <a href="./assets/Sreelekshmi S R Software Developer.pdf" class="btn btn-brand me-3"
+                download="./assets/Sreelekshmi S R Software Developer.pdf">Download CV
+              </a>
+              <a href="#" class="link-custom phone__style">Call :(+91) 8921959861</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //HOME SECTION END -->
+
+    <!-- SERVICES SECTION -->
+
+    <section id="services" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-8">
+            <h6 class="text-brand">SKILLS</h6>
+            <h1>Technology That I Know</h1>
+          </div>
+        </div>
+
+        <!-- .gy-* classes can be used to control the vertical gutter widths. Like
+          the horizontal gutters, the vertical gutters can cause some overflow
+          below the .row at the end of a page. -->
+        <div class="row gy-4">
+          <!-- on medium devices and above it will take column-4 and below it will take 12 column -->
+          <!-- branding -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="service bg-base p-4 rounded-4 shadow-effect">
+              <!-- icon -->
+              <div class="iconbox rounded-4">
+                <i class="las la-feather"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Front-end Development</h5>
+              <p>
+                JAVASCRIPT,REACT JS,REACT-NATIVE,REDUX, HTML, CSS,SCSS, BOOTSTRAP, TAILWIND CSS,
+                ANGULAR, MATERIAL UI,
+              </p>
+              <a href="#" class="link-custom">Read more</a>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service bg-base p-4 rounded-4 shadow-effect">
+              <!-- icon -->
+              <div class="iconbox rounded-4">
+                <i class="las la-pencil-ruler"></i>
+              </div>
+              <h5 class="mt-4 mb-2">Back-end Development</h5>
+              <p>NODEJS , EXPRESS, MONGODB, POSTMAN</p>
+              <a href="#" class="link-custom">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// SERVICES SECTION-->
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">EXPERIENCE</h6>
+          </div>
+        </div>
+        <!-- experience section -->
+        <!-- one row athinullil col-lg-6 koduthik -->
+        <!-- ennit aa columnthinte further devided in to row -->
+        <div class="row gy-5">
+          <!-- right section -->
+          <div class="col-lg-6">
+            <!-- education section -->
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              Experience
+            </h3>
+            <div class="row gy-4">
+              <!-- card1 -->
+              <div class="col-md-6" data-aos="fade-up">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>Software Developer</h4>
+                  <p class="text-brand mb-3">
+                    inerG Software Innovations (April 2022 - Current)
+                  </p>
+                  <p>Infopark, Kochi</p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="col-md-6" data-aos="fade-up">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>Full-Stack Developer Intern</h4>
+                  <p class="text-brand mb-3">
+                    Sello Plus Pvt Ltd (November 2021 - January 2022)
+                  </p>
+                  <p> Kochi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--// EXPERIENCE SECTION -->
+
+    <!-- WORK SECTION -->
+
+    <section id="work" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">WORK</h6>
+            <h1>My Recent Project</h1>
+          </div>
+        </div>
+
+        <!-- content  -->
+        <div class="row gy-4">
+          <!-- first card -->
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="card-custom rounded-4 bg-base shadow-effect height__experience__Card">
+              <!-- image -->
+              <div class="card-custom-image rounded-4">
+                <img class="rounded-4" src="./assets/images/project-1.jpg" alt="project1" />
+              </div>
+
+              <!-- details -->
+              <div class="card-custom-content p-4">
+                <h4>Onboarding Module</h4>
+                <a href="#" class="link-custom">10/2022 - 03/2023</a>
+                <p>
+                  Developed a B2C responsive web portal.This project will help
+                  the student or parent to identify the status of purchased
+                  product, theirpayment details, their first class details all
+                  this will be visible in the app as well as web portal for 15
+                  days from their date of joinin
+                </p>
+                <!-- <p href="#" class="link-custom">10/2022 - 03/2023</p> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- second card -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom rounded-4 bg-base shadow-effect height__experience__Card">
+              <!-- image -->
+              <div class="card-custom-image rounded-4">
+                <img class="rounded-4" src="./assets/images/project-2.png" alt="project2" />
+              </div>
+
+              <!-- details -->
+              <div class="card-custom-content p-4">
+                <h4>Parent Dashboard</h4>
+                <a href="#" class="link-custom">06/2022 - 10/2022</a>
+                <p>
+                  Developed a B2C Web Portal for Parents for checking student
+                  performance, their scores, their attendance details, which
+                  area should student need to improve other details. Done
+                  Frontend development using Reactjs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-custom rounded-4 bg-base shadow-effect height__experience__Card">
+              <!-- image -->
+              <div class="card-custom-image rounded-4">
+                <img class="rounded-4" src="./assets/images/project-3.png" alt="project3" />
+              </div>
+
+              <!-- details -->
+              <div class="card-custom-content p-4">
+                <h4>Mentor Dashboard</h4>
+                <a href="#" class="link-custom">03/2022 - 06/2022</a>
+                <p>
+                  Developed a Web Portal for mentors for checking student
+                  performance, which area student is struggling and all other
+                  details with graphical representation. Done Frontend
+                  development using Reactjs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--// WORK SECTION -->
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row pb-4" data-aos="fade-up">
+          <div class="col-lg-8">
+            <h6 class="text-brand">ABOUT</h6>
+            <h1> Education </h1>
+          </div>
+        </div>
+
+        <!-- experience section -->
+        <!-- one row athinullil col-lg-6 koduthik -->
+        <!-- ennit aa columnthinte further devided in to row -->
+        <div class="row gy-5">
+          <!-- left section -->
+          <div class="col-lg-6">
+            <!-- education section -->
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              Education
+            </h3>
+            <div class="row gy-4">
+              <!-- card1 -->
+              <div class="col-md-6" data-aos="fade-up">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>MEAN Stack Development</h4>
+                  <p class="text-brand mb-3">
+                    Expertzlab Technologies Pvt Ltd,Kochi
+                  </p>
+                  <p>TRAINING COURSE</p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="col-md-6" data-aos="fade-up">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>Computer Science Engineering</h4>
+                  <p class="text-brand mb-3">
+                    Kerala University (2016 - 2020)
+                  </p>
+                  <p>GRADUATION</p>
+                </div>
+              </div>
+
+              <!-- card3 -->
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>GHSS CHITTAR</h4>
+                  <p class="text-brand mb-3">
+                    Kerala State (2014 - 2016)
+                  </p>
+                  <p>HSS</p>
+                </div>
+              </div>
+
+              <!-- card4 -->
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div style="min-height: 195px" class="bg-base p-4 rounded-4 shadow-effect">
+                  <h4>GHSS CHITTAR</h4>
+                  <p class="text-brand mb-3">
+                    Kerala State (2013 - 2014)
+                  </p>
+                  <p>SSLC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!--// ABOUT SECTION -->
+
+    <!-- CONTACT SECTION-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content addition__model-style">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              CONTACT US
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control input__formstyle" id="recipient-name"
+                  placeholder="Enter your name" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control input__formstyle" id="recipient-name"
+                  placeholder="Enter your email" />
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-control input__formstyle" id="recipient-name"
+                  placeholder="Enter your subject" />
+              </div>
+
+              <div class="mb-3">
+                <textarea class="form-control input__formstyle" id="message-text"
+                  placeholder="Enter the message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+              Send message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- // CONTACT SECTION -->
+  </div>
+
+  <!-- js section -->
+  <!-- while adding defer it will not block the execution of the code -->
+  <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
